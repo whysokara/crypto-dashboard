@@ -3,7 +3,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import {
   Navbar,
-  Exhanges,
+  Exchanges,
   Cryptocurrencies,
   CryptoDetails,
   News,
@@ -25,7 +25,7 @@ const App = () => {
                 <Homepage />
               </Route>
               <Route exact path="/exchanges">
-                <Exhanges />
+                <Exchanges />
               </Route>
               <Route exact path="/cryptocurrencies">
                 <Cryptocurrencies />
@@ -39,8 +39,22 @@ const App = () => {
             </Switch>
           </div>
         </Layout>
+
+        <div className="footer">
+          <Typography.Title
+            level={5}
+            style={{ color: "white", textAlign: "center" }}
+          >
+            Cryptoverse <br />
+            All rights reserved 2021
+          </Typography.Title>
+          <Space>
+            <Link to="/">Home</Link>
+            <Link to="/exhanges">Exhanges</Link>
+            <Link to="/news">News</Link>
+          </Space>
+        </div>
       </div>
-      <div className="footer">Footer</div>
     </div>
   );
 };

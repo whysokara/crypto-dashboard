@@ -9,12 +9,13 @@ import {
   FundOutlined,
   Menuutlined,
 } from "@ant-design/icons";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar src="" alt="logo" size="large" />
+        <Avatar className="logo" src={icon} alt="logo" size="small" />
         <Typography.Title level={2} className="logo">
           <Link to="/">Cryptoverse</Link>
         </Typography.Title>
